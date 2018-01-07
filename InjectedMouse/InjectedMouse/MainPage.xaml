@@ -7,9 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button Click="Button_Click">Start</Button>
-        <ListView Height="100">
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" PreviewKeyUp="StackPanel_PreviewKeyUp">
+        <StackPanel Margin="20" Orientation="Horizontal">
+            <Button Click="{x:Bind MoveMouse}">Move mouse</Button>
+            <Button Click="{x:Bind ScrollMouse}">Scroll mouse</Button>
+            <Button Click="{x:Bind TypeText}">Type text</Button>
+            <TextBlock Text="Press C key to simulate mouse click" VerticalAlignment="Center" Margin="12,0,0,0" />
+        </StackPanel>
+        
+        <ListView Height="200" Background="Beige" Margin="20">
+            <ListViewItem>0</ListViewItem>
             <ListViewItem>1</ListViewItem>
             <ListViewItem>2</ListViewItem>
             <ListViewItem>3</ListViewItem>
@@ -18,7 +25,8 @@
             <ListViewItem>6</ListViewItem>
             <ListViewItem>7</ListViewItem>
             <ListViewItem>8</ListViewItem>
-            <ListViewItem>9</ListViewItem>
+            <ListViewItem>9</ListViewItem>            
         </ListView>
+        <TextBox x:Name="TypingTarget" Margin="20" />
     </StackPanel>
 </Page>
