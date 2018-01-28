@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="UwpTextHighlighting.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpTextHighlighting"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RichTextBlock TextWrapping="Wrap" x:Name="RichBlock">
+            <RichTextBlock.Blocks>
+                <Paragraph Margin="10">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id eros sed ante volutpat consectetur eget a lacus. Nam lacus lacus, mollis at sem vitae, mollis faucibus est. In eget purus a ex sagittis maximus ut nec nibh. Nulla ornare sapien justo, non malesuada tellus blandit dictum. Fusce faucibus bibendum libero. Proin auctor, turpis non imperdiet finibus, tortor augue lacinia dolor, nec lobortis velit nibh at lacus. Morbi hendrerit orci sit amet purus tincidunt luctus. Nunc purus eros, commodo vulputate dapibus id, fermentum porta nisi. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo nibh. Pellentesque quis enim ut erat mollis hendrerit. Fusce finibus diam nec convallis eleifend. Nullam quis lorem sit amet sapien vestibulum lacinia. Integer suscipit turpis id eros viverra tempor.
+                </Paragraph>
+                <Paragraph Margin="10">
+                    In elementum condimentum turpis. Nunc eu consectetur odio. Mauris dui dui, pretium vel condimentum vel, posuere non nisi. Aenean quam nisl, fermentum eu bibendum vel, malesuada non libero. Curabitur luctus odio lectus, nec ornare diam feugiat ut. Phasellus et diam et purus fermentum ornare vel vestibulum sem. Nullam sem dolor, commodo eget lorem quis, ultrices maximus ipsum. Cras nec fringilla nibh. In rutrum lobortis felis, porta mollis orci sodales et. Proin a malesuada nisl, id pellentesque ligula. Donec tincidunt metus maximus risus placerat dapibus. Vivamus nec ultrices est. Vestibulum eu augue sodales, ultrices mi vel, sollicitudin purus. Aliquam eleifend dignissim mauris. Nam id lorem dignissim, viverra dui a, accumsan enim. Cras lorem nunc, varius non purus quis, tempus lacinia quam.
+                </Paragraph>
+                <Paragraph Margin="10">
+                    Suspendisse justo nisi, aliquam fermentum tristique vel, iaculis ut urna. Morbi a libero est. Aliquam imperdiet dui at interdum scelerisque. Praesent nec suscipit nisl, nec ultricies tortor. Cras mattis metus ut metus consequat congue. Nulla tempor nulla mauris, nec gravida eros sollicitudin id. Etiam hendrerit vulputate felis, nec viverra leo tincidunt eget. Etiam egestas metus eros, id vestibulum sapien congue ac. Quisque efficitur interdum gravida. Mauris vitae est ut diam laoreet tempor. Quisque ac ligula ac velit tempor placerat. Praesent ultrices fermentum vulputate.
+                </Paragraph>
+                <Paragraph Margin="10">
+                    Vivamus tristique magna et purus finibus, fermentum venenatis lectus ullamcorper. Phasellus condimentum nisi ligula, quis congue tortor viverra scelerisque. Quisque et neque ut mauris sollicitudin gravida vel suscipit lorem. Nam eu condimentum lorem. Nam vitae sapien enim. Aliquam vel lacinia neque. Maecenas elit massa, consectetur faucibus tellus vel, lacinia iaculis mi. Quisque hendrerit erat ut suscipit venenatis. Aliquam tristique rutrum odio viverra sagittis. Integer interdum tincidunt nisi vitae viverra. Praesent pellentesque in ex at tempus. Quisque ut nibh nisl. Sed quis tortor non quam volutpat pretium non quis ex.
+                </Paragraph>
+                <Paragraph Margin="10">
+                    Nam gravida vel tellus at dictum. Maecenas blandit, nunc fringilla tristique consectetur, orci lorem laoreet purus, at ornare nisl nisi in justo. Nullam varius nibh at pharetra tincidunt. Aenean id bibendum risus. Nullam tristique laoreet ex vitae blandit. Etiam quis neque sollicitudin, sodales odio sit amet, viverra massa. Vivamus faucibus turpis vitae ex elementum aliquet. Nam efficitur magna quis nisl finibus, et congue libero vestibulum. Aenean vulputate massa nisi, in pulvinar justo fringilla ut. Aliquam erat volutpat. Suspendisse eget bibendum tortor, eget volutpat nisl. Donec commodo lacus vitae laoreet auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ac orci felis. Aliquam rhoncus bibendum ex.
+                </Paragraph>
+            </RichTextBlock.Blocks>
+        </RichTextBlock>
+    </Grid>
+</Page>
