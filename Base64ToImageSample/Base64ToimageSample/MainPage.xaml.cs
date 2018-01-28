@@ -48,7 +48,7 @@ namespace Base64ToImageSample
             await dataWriter.StoreAsync();
             inMemoryStream.Seek(0);
             var bitmapImage = new BitmapImage();
-            bitmapImage.SetSource(inMemoryStream);
+            await bitmapImage.SetSourceAsync(inMemoryStream);
             return bitmapImage;
         }
 
