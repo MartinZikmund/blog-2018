@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Text;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -34,6 +35,9 @@ namespace UwpCalendarViewAlign
             {
                 textBlock.HorizontalAlignment = HorizontalAlignment.Left;
                 textBlock.VerticalAlignment = VerticalAlignment.Top;
+                textBlock.Margin = new Thickness(12);
+                textBlock.FontSize = 26;
+                textBlock.FontWeight = FontWeights.Light;
             }
         }
 
