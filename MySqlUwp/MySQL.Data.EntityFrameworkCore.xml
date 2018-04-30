@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MySql.Data.EntityFrameworkCore</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.EntityFrameworkCore.MySQLDbContextOptionsExtensions">
+            <summary>
+            ContextOptionsExtensions implementations for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Extensions.MySQLPropertyBuilderExtensions">
+            <summary>
+            MySQLPropertyBuilderExtensions implementation
+            </summary>
+        </member>
+        <member name="M:MySQL.Data.EntityFrameworkCore.MySQLServiceCollectionExtensions.AddEntityFrameworkMySQL(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                MySQL specific extension methods for IServiceCollection.
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Infraestructure.Internal.MySQLOptionsExtension">
+            <summary>
+            RelationalOptionsExtension implementation for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Infraestructure.MySQLDbContextOptionsBuilder">
+            <summary>
+            RelationalDbContextOptionsBuilder implementation for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Metadata.Internal.MySQLAnnotationNames">
+            <summary>
+            Annotations for MySQL specifics
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Metadata.Internal.MySQLFullAnnotationNames">
+            <summary>
+            RelationalFullAnnotationNames for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Metadata.MySQLAnnotationProvider">
+            <summary>
+            Annotation Provider implementation
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Migrations.MySQLMigrationsSqlGenerator">
+            <summary>
+            MigrationSqlGenerator implementation for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Migrations.Operations.MySQLCreateDatabaseOperation">
+            <summary>
+            Create database operation class for migrations
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Migrations.Operations.MySQLDropDatabaseOperation">
+            <summary>
+            Drop database operation for migrations.
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.MySQLCompositeMemberTranslator">
+            <summary>
+            RelationalCompositeMemberTranslator implementation for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.MySQLCompositeMethodCallTranslator">
+            <summary>
+            RelationalCompositeMethodCallTranslator implementation for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Query.MySQLQueryGeneratorFactory">
+            <summary>
+            Implementation for QuerySqlGeneratorFactoryBase
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.MySQLDatabaseCreator">
+            <summary>
+            Relational Database creator implementation in MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.MySQLDatabaseProviderServices">
+            <summary>
+            RelationalDatabaseProviderServices implementation for MySQL 
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Update.MySQLModificationCommandBatch">
+            <summary>
+            AffectedCountModificationCommandBatch implementation for MySQL
+            </summary>
+        </member>
+        <member name="T:MySQL.Data.EntityFrameworkCore.Update.MySQLModificationCommandBatchFactory">
+            <summary>
+            IModificationCommandBatchFactory implemntation for MySQL
+            </summary>
+        </member>
+        <member name="M:MySql.Data.EntityFrameworkCore.Storage.Internal.MySQLCommandBuilder.Build">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.EntityFrameworkCore.Storage.Internal.MySQLCommandBuilder.ToString">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+    </members>
+</doc>
