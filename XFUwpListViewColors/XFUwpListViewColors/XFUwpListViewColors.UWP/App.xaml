@@ -1,0 +1,10 @@
+﻿<Application
+    x:Class="XFUwpListViewColors.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XFUwpListViewColors.UWP"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <SolidColorBrush Color="DodgerBlue" x:Key="ListViewItemBackgroundSelected" />
+    </Application.Resources>
+</Application>
