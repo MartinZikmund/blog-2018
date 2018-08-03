@@ -8,7 +8,7 @@ namespace XFUwpListViewColors
     public class SelectionColorListView : ListView
     {
         public static readonly BindableProperty SelectionColorProperty =
-            BindableProperty.Create(nameof(SelectionColor), typeof(Color), typeof(SelectionColorListView), Color.Green);
+            BindableProperty.Create(nameof(SelectionColor), typeof(Color), typeof(SelectionColorListView), Color.LawnGreen);
 
         public Color SelectionColor
         {

@@ -5,6 +5,6 @@
     xmlns:local="using:XFUwpListViewColors.UWP"
     RequestedTheme="Light">
     <Application.Resources>
-        <SolidColorBrush Color="DodgerBlue" x:Key="ListViewItemBackgroundSelected" />
+        <SolidColorBrush Color="DodgerBlue" x:Key="SystemControlHighlightListAccentLowBrush" />
     </Application.Resources>
 </Application>

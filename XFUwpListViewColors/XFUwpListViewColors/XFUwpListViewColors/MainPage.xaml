@@ -6,8 +6,9 @@
 
     <StackLayout>
         <Label Text="Application wide (DodgerBlue)" />
-        <ListView  />
+        <ListView SelectionMode="Single" ItemsSource="{Binding Items}" />
         <Label Text="Custom renderer (LawnGreen)" />
+        <local:SelectionColorListView SelectionMode="Single" ItemsSource="{Binding Items}" SelectionColor="LawnGreen" />
     </StackLayout>
 
 </ContentPage>
