@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XplatApiStats"
+             x:Class="XplatApiStats.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+    	<Label Text="Platform stats" FontSize="30"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Label Text="Type count" FontAttributes="Bold" />
+        <Label Text="{Binding TypeCount}" />
+        <Label Text="Longest type full name" FontAttributes="Bold" />
+        <Label Text="{Binding LongestTypeFullName}" />
+        <Label Text="Shortest type full name" FontAttributes="Bold" />
+        <Label Text="{Binding ShortestTypeFullName}" />
+        <Label Text="Longest type name" FontAttributes="Bold" />
+        <Label Text="{Binding LongestTypeName}" />
+        <Label Text="Shortest type name" FontAttributes="Bold" />
+        <Label Text="{Binding ShortestTypeName}" />
+        <Label Text="Average type name length" FontAttributes="Bold" />
+        <Label Text="{Binding AverageTypeNameLength}" />
+        <Label Text="Longest type member name" FontAttributes="Bold" />
+        <Label Text="{Binding LongestTypeMemberName}" />
+        <Label Text="Shortest type member name" FontAttributes="Bold" />
+        <Label Text="{Binding ShortestTypeMemberName}" />
+        <Label Text="Average type member name length" FontAttributes="Bold" />
+        <Label Text="{Binding AverageTypeMemberNameLength}" />
+        <Label Text="Number of types with platform name" FontAttributes="Bold" />
+        <Label Text="{Binding NumberOfTypesWithPlatformInName}" />
+        <Label Text="Number of views" FontAttributes="Bold" />
+        <Label Text="{Binding NumberOfViews}" />
+    </StackLayout>
+
+</ContentPage>
