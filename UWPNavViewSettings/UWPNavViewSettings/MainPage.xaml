@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <local:CustomizableNavigationView IsSettingsVisible="True">
+        <local:CustomizableNavigationView SettingsItemText="My text"  IsSettingsVisible="True">
         </local:CustomizableNavigationView>
     </Grid>
 </Page>
