@@ -12,10 +12,20 @@ namespace UWPNavViewSettings
     {
         private const string SettingsNavigationViewItemName = "SettingsNavPaneItem";
 
+        private readonly SymbolIcon _defaultIcon = new SymbolIcon(Symbol.Setting);
         private NavigationViewItem _settingsItem;
 
         public static readonly DependencyProperty SettingsItemTextProperty = DependencyProperty.Register(
-           nameof(SettingsItemText), typeof(string), typeof(CustomizableNavigationView), new PropertyMetadata(default(string), SettingsItemTextChanged));
+               nameof(SettingsItemText), typeof(string), typeof(CustomizableNavigationView), new PropertyMetadata(default(string), SettingsItemChanged));
+
+        public static readonly DependencyProperty SettingsItemIconProperty = DependencyProperty.Register(
+            nameof(SettingsItemIcon), typeof(IconElement), typeof(CustomizableNavigationView), new PropertyMetadata(default(IconElement), SettingsItemChanged));
+
+        public IconElement SettingsItemIcon
+        {
+            get => (IconElement)GetValue(SettingsItemIconProperty);
+            set => SetValue(SettingsItemIconProperty, value);
+        }
 
         public string SettingsItemText
         {
@@ -30,9 +40,9 @@ namespace UWPNavViewSettings
             UpdateSettingsItemText();
         }
 
-        private static void SettingsItemTextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void SettingsItemChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
         {
-            if (d is CustomizableNavigationView navigationView)
+            if (dependencyObject is CustomizableNavigationView navigationView)
             {
                 navigationView.UpdateSettingsItemText();
             }
@@ -43,6 +53,7 @@ namespace UWPNavViewSettings
             if (_settingsItem != null)
             {
                 _settingsItem.Content = SettingsItemText ?? "";
+                _settingsItem.Icon = SettingsItemIcon ?? _defaultIcon;
             }
         }
     }

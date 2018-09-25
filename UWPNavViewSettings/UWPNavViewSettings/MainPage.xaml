@@ -10,6 +10,9 @@
 
     <Grid>
         <local:CustomizableNavigationView SettingsItemText="My text"  IsSettingsVisible="True">
+            <local:CustomizableNavigationView.SettingsItemIcon>
+                <SymbolIcon Symbol="Edit" />
+            </local:CustomizableNavigationView.SettingsItemIcon>
         </local:CustomizableNavigationView>
     </Grid>
 </Page>
