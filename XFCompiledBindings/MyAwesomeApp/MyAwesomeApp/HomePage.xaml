@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="MyAwesomeApp.HomePage"
+             xmlns:viewModels="clr-namespace:MyAwesomeApp.ViewModels"
+             x:DataType="viewModels:HomeViewModel">
+    <ContentPage.BindingContext>
+        <viewModels:HomeViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding Greeting, Mode=TwoWay}" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{Binding Greeting, Mode=OneWay}" />
+                        <Span Text=", world!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
